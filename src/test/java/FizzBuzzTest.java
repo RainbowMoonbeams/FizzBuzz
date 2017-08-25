@@ -1,5 +1,6 @@
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class FizzBuzzTest {
@@ -12,6 +13,11 @@ public class FizzBuzzTest {
 	public void whenNumberisTwoOutputShouldBeTwo() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		assertEquals("2", fizzBuzz.fizz(2));
+	}
+	@Test
+	public void whenNumberisThreeOutputShouldBeFizz() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+		assertEquals("Fizz", fizzBuzz.fizz(3));
 	}
 }
 
