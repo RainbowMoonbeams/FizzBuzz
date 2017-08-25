@@ -25,5 +25,10 @@ public class FizzBuzzTest {
 		assertEquals("Fizz", fizzBuzz.fizz(3));
 		assertEquals("Fizz", fizzBuzz.fizz(6));
 	}
+	@Test
+	public void whenNumberisDivisibleBtFiveOutputShouldBeBuzz() {
+		assertEquals("Buzz", fizzBuzz.fizz(5));
+		assertEquals("Buzz", fizzBuzz.fizz(10));
+	}
 }
 
