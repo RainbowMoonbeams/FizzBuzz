@@ -1,6 +1,5 @@
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Before;
 import org.junit.Test;
 
 public class FizzBuzzTest {
@@ -15,9 +14,10 @@ public class FizzBuzzTest {
 		assertEquals("2", fizzBuzz.fizz(2));
 	}
 	@Test
-	public void whenNumberisThreeOutputShouldBeFizz() {
+	public void whenNumberisDivisibleByThreeOutputShouldBeFizz() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		assertEquals("Fizz", fizzBuzz.fizz(3));
+		assertEquals("Fizz", fizzBuzz.fizz(6));
 	}
 }
 
