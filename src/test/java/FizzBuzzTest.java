@@ -31,8 +31,9 @@ public class FizzBuzzTest {
 		assertEquals("Buzz", fizzBuzz.fizz(10));
 	}
 	@Test
-	public void whenNumberIsDivisibleByThreeAndFiveOutputShouldBeFizz() {
+	public void whenNumberIsDivisibleByThreeAndFiveOutputShouldBeFizzBuzz() {
 		assertEquals("FizzBuzz", fizzBuzz.fizz(15));
+		assertEquals("FizzBuzz", fizzBuzz.fizz(30));
 	}
 }
 
